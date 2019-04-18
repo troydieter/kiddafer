@@ -1,7 +1,121 @@
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+    body {
+        margin: 0;
+        font-family: Montserrat, sans-serif;
+        background-color: #e8f4f8;
 
-h4{
-  font-color: red;
-}
-body{
-  background-color: red;
-}
+    }
+
+    form {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0.25rem;
+    }
+
+    form input {
+        border: 0;
+        padding: 0.5rem;
+        width: 100%;
+        outline: 0;
+        margin-right: 0.5rem;
+        border-radius: 0.25rem;
+        background: #ccc;
+    }
+
+    form button {
+        width: 6rem;
+        background-color: #1b8c00;
+        color: white;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+    }
+
+    form button:hover {
+        background-color: #166d01;
+    }
+
+    .messages {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    .messages li {
+        padding: 0.5rem;
+    }
+
+    .messages li:nth-child(odd) {
+        background: #e4d2e4;
+    }
+    .main-heading{
+      text-align: center;
+    }
+    #header-pic{
+      height: 250px;
+    }
+    h2{
+      text-transform: uppercase;
+    }
+    h1{
+      text-transform:uppercase;
+      letter-spacing: 10px;
+       font-weight: 900;
+    }
+    .fa-heart {
+      color: #ff6961;
+    }
+    .fa-star{
+      color: #31639c;
+    }
+  p{
+    font-size: 20px;
+  }
+
+</style>
+</head>
+<body>
+<div class="container main-heading">
+<div class="row">
+  <div class="col-sm-4">
+<h1> Kidda Fer?</h1>
+<h4> Talk to your favorite nerds online on port 3000</h4>
+<p><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+</div>
+<div class="col-sm-4">
+<img src="https://gph.to/2MUgOpW" id="header-pic">
+</div>
+<div class="col-sm-4">
+<h3>A chat app coded with:</h3>
+<ol >
+<li>sockets.io</li>
+<li> node.js</li>
+<li>express.js & <i class="fas fa-heart"></i></li>
+</ol>
+</div>
+</div>
+</div> <!-- end of container -->
+<div class="container messages">
+<div class="row">
+ <div class='col-sm-12'>
+<ul class="messages"></ul>
+</div>
+</div> <!-- end of row -->
+</div><!-- end of container -->
+<div class="container form-div">
+<div class="row">
+  <div class="col-sm-12">
+<form>
+    <input type="text" class="input" autocomplete="off" autofocus />
+    <button class="btn btn-success">Send</button>
+</form>
+</div>
+</div> <!-- end of row -->
+</div><!-- end of container -->
